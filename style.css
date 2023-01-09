@@ -73,3 +73,50 @@ header svg {
   margin-top: -0.6em;
   cursor: pointer;
 }
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+}
+
+.subhead {
+  font-size: 1.4rem;
+}
+
+section.hero {
+  color: white;
+  height: 90vh;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+section.hero .down-arrow {
+  stroke: white;
+  position: absolute;
+  bottom: 8em;
+  width: 1em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+section.hero .down-arrow path {
+  fill: white;
+}
+
+.more-info img {
+  width: 100%;
+  object-fit: cover;
+  height: 11em;
+}
+
+.more-info .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.more-info .desc {
+  line-height: 1.5rem;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
