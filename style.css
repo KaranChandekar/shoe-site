@@ -1,0 +1,19 @@
+body {
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://assets.codepen.io/2621168/shoe.jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: introLoad 2s forwards;
+  /* overflow: hidden; */
+}
