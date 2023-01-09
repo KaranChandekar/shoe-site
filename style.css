@@ -120,3 +120,145 @@ section.hero .down-arrow path {
 .open-nav {
   transform: translateX(0%);
 }
+
+@media (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  svg.close {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+  nav ul a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+
+  .logo {
+    color: black;
+  }
+
+  .logo span {
+    color: red;
+  }
+
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero .subhead {
+    margin-bottom: 3em;
+  }
+
+  section.hero svg.down-arrow {
+    stroke: black;
+    position: unset;
+  }
+
+  section.hero svg.down-arrow path {
+    fill: black;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+
+  .feature img {
+    width: 25em;
+  }
+
+  .feature .content {
+    text-align: right;
+    width: 25em;
+  }
+
+  .feature.left {
+    grid-template-areas: "left right";
+  }
+
+  .feature.left img {
+    grid-area: left;
+  }
+
+  .feature.left .content {
+    text-align: left;
+    width: 25em;
+    justify-self: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .feature {
+    gap: 0;
+  }
+}
+
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
