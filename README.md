@@ -32,6 +32,16 @@ A basic warmup exercise. Simple, mobile first shoe site design Built with:
 - CSS Animations
 - JS
 
+## Screenshot
+
+### Desktop:
+
+![shoesite](https://user-images.githubusercontent.com/93200960/216073135-8c09f630-0f97-4940-9603-704414173edd.png)
+
+### Mobile:
+
+![shoesitephone](https://user-images.githubusercontent.com/93200960/216073190-6d32b4d2-4952-40f3-9a5b-e36e9bcd2371.png)
+
 ## Some cool stuff
 
 Nothing much, basic way of navigation using Vanilla JS:
